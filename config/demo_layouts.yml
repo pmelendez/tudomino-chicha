@@ -1,0 +1,108 @@
+global:
+  screen_width: 1920
+  screen_height: 1080
+  background_color: "#0a0a0a"
+  fps_limit: 60
+  pixel_perfect: false
+  initial_screen: "main_menu"
+
+screens:
+  main_menu:
+    background_color: "#1a1a2e"
+    sprites:
+      background:
+        texture: "background.png"
+        position: { x: 960, y: 540 }
+        z_order: 1
+        scale: { x: 1.78, y: 1.33 }
+        
+      logo:
+        texture: "td-logo.png"
+        position: { x: 960, y: 250 }
+        z_order: 10
+        
+      start_button:
+        texture: "base_line.png"
+        position: { x: 960, y: 600 }
+        z_order: 20
+
+  game_demo:
+    background_color: "#2a2a4e"
+    sprites:
+      player_frames:
+        texture: "frames_players.png"
+        position: { x: 960, y: 540 }
+        z_order: 1
+        
+      domino_1:
+        texture: "1.png"
+        position: { x: 700, y: 400 }
+        z_order: 10
+        
+      domino_2:
+        texture: "2.png"
+        position: { x: 800, y: 400 }
+        z_order: 10
+        
+      domino_3:
+        texture: "3.png"
+        position: { x: 900, y: 400 }
+        z_order: 10
+        
+      domino_4:
+        texture: "4.png"
+        position: { x: 1000, y: 400 }
+        z_order: 10
+        
+      domino_5:
+        texture: "5.png"
+        position: { x: 1100, y: 400 }
+        z_order: 10
+        
+      domino_6:
+        texture: "6.png"
+        position: { x: 1200, y: 400 }
+        z_order: 10
+        
+      game_base:
+        texture: "base.png"
+        position: { x: 960, y: 700 }
+        z_order: 5
+
+  animation_demo:
+    background_color: "#3a3a6e"
+    sprites:
+      title_logo:
+        texture: "td-logo.png"
+        position: { x: 960, y: 150 }
+        z_order: 10
+        
+      cpu_player:
+        texture: "CPU1.jpg"
+        position: { x: 960, y: 540 }
+        z_order: 10
+        scale: { x: 2, y: 2 }
+        
+      emoji_love:
+        texture: "love.png"
+        position: { x: 500, y: 300 }
+        z_order: 15
+        scale: { x: 3, y: 3 }
+        
+      emoji_kiss:
+        texture: "kiss.png"
+        position: { x: 1400, y: 300 }
+        z_order: 15
+        scale: { x: 3, y: 3 }
+        
+      emoji_sunglasses:
+        texture: "sunglasses2.png"
+        position: { x: 500, y: 800 }
+        z_order: 15
+        scale: { x: 3, y: 3 }
+        
+      emoji_sleep:
+        texture: "sleep.png"
+        position: { x: 1400, y: 800 }
+        z_order: 15
+        scale: { x: 3, y: 3 }
