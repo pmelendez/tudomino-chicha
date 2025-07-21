@@ -1,16 +1,19 @@
 
 Below there is a prompt for a programming task. I need you to approach that task in five stages.
 
-Planning: You will check ./planning/board.md and select the best task or group of tasks to work checking the dependencies. You will create a detailed implementation plan for each of those tasks in ./planning/tasks/task{id}/implementation_plan.md. Ultrathink this stage as it is critical to the project.
-Development:  You will create a feature branch from `agent-dev` to work. You will spawn independent subagents to address each of the tasks that can be worked in parallel, following the implementation plan create in the Planning stage. After each task, the subagent should create tests to validate their work and should iterate until all tests pass.
+Planning: You will create a ./planning/board.md with your TODO list and select the best task or group of tasks to work checking the dependencies. You will create a detailed implementation plan for each of those tasks in ./planning/tasks/task{id}-implementation_plan.md. Ultrathink this stage as it is critical to the project.
+
+Development:  You will create a feature branch from `attempt-2` to work. You will spawn independent subagents to address each of the tasks that can be worked in parallel, following the implementation plan create in the Planning stage. After each task, the subagent should create tests to validate their work and should iterate until all tests pass.
+
 Validate: Using Playwright validate different functionality of the project. You will have access to a MCP server for this. Create all the bugs in ./planning/bugs.md
 Fix: Iterate using playwright to address the bugs found in the Validate stage. At the end of this phase all the project should be concluded and working.
-Update: After all tests are passing, commit your work, merge to `agent_dev` and create a PR from `agent_dev` to `dev`.
+
+Update: After all tests are passing, commit your work, merge to `attempt-2`.
 
 ---
 
 ## Task Description
-Initialize a complete PixiJS project with modern build tools, JavaScript configuration, and development server setup. This forms the foundation for all subsequent development work. We will create a system that will load assests to the screen using a texture packer generated JSON (./assets/sprites.json) corresponding to a texture file (./assets/sprites.png). We will control the coordinates and other properties of the screen on a config file (./config/layouts.yml)
+Initialize a complete PixiJS project with modern build tools, JavaScript configuration, and development server setup. This forms the foundation for all subsequent development work. We will create a system that will load assests to the screen using a texture-packer-generated JSON (./assets/sprites.json) corresponding to a texture file (./assets/sprites.png). We will control the coordinates and other properties of the screen on a config file (./config/layouts.yml)
 
 ## Context
 The project needs to support:
@@ -48,19 +51,19 @@ screens:
     music: "assets/audio/menu_theme.ogg"
     sprites:
       title_logo:
-        texture: "background.png"
+        texture: "td-logo.png"
         position:
-          x: 960
-          y: 200
-        z_order: 10
+          x: 0
+          y: 0
+        z_order: 1
         visible: true
       
-      start_button:
-        texture: "base_line.png"
+      backgroud:
+        texture: "background.png"
         position:
-          x: 960
-          y: 450
-        z_order: 20
+          x: 100
+          y: 100
+        z_order: 2
         visible: true
 
 ```
